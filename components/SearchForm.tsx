@@ -12,7 +12,7 @@ const SearchForm = ({ query }: { query?: string }) => {
       <input
         type="text"
         name="query"
-        defaultValue=""
+        defaultValue={query}
         placeholder="Search Startups"
         className="search-input"
       />
