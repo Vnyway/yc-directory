@@ -12,7 +12,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       profile: { id, login, bio },
     }) {
       const existingUser = await client
-        // .withConfig({ useCdn: false })
+        .withConfig({ useCdn: false })
         .fetch(AUTHOR_BY_GITHUB_ID_QUERY, {
           id,
         });
